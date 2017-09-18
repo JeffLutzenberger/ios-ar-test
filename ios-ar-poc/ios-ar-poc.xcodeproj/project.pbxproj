@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C04F5EF1F706ACC00B067E7 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C04F5EE1F706ACC00B067E7 /* AnnotationView.swift */; };
+		1C04F5F11F70700700B067E7 /* WaypointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C04F5F01F70700700B067E7 /* WaypointViewController.swift */; };
 		4E50CAE81F6EDFB10073D485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50CAE71F6EDFB10073D485 /* AppDelegate.swift */; };
 		4E50CAEA1F6EDFB10073D485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E50CAE91F6EDFB10073D485 /* ViewController.swift */; };
 		4E50CAED1F6EDFB10073D485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E50CAEB1F6EDFB10073D485 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C04F5EE1F706ACC00B067E7 /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		1C04F5F01F70700700B067E7 /* WaypointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaypointViewController.swift; sourceTree = "<group>"; };
 		4E50CAE41F6EDFB10073D485 /* ios-ar-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ar-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E50CAE71F6EDFB10073D485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E50CAE91F6EDFB10073D485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,12 +122,14 @@
 			children = (
 				4E50CAE71F6EDFB10073D485 /* AppDelegate.swift */,
 				4E50CAE91F6EDFB10073D485 /* ViewController.swift */,
+				1C04F5F01F70700700B067E7 /* WaypointViewController.swift */,
 				4E50CAEB1F6EDFB10073D485 /* Main.storyboard */,
 				4E50CAEE1F6EDFB10073D485 /* Assets.xcassets */,
 				4E50CAF01F6EDFB10073D485 /* LaunchScreen.storyboard */,
 				4E50CAF31F6EDFB10073D485 /* Info.plist */,
 				4ECD32C11F6EE8C3007A6705 /* Waypoint.swift */,
 				4ECD32C31F6EE9DF007A6705 /* WaypointGraphic.swift */,
+				1C04F5EE1F706ACC00B067E7 /* AnnotationView.swift */,
 			);
 			path = "ios-ar-poc";
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				TargetAttributes = {
 					4E50CAE31F6EDFB00073D485 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 93P2X7NCZC;
 						ProvisioningStyle = Automatic;
 					};
 					4E50CAF71F6EDFB10073D485 = {
@@ -303,7 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7C25A1DBEF9B51E2C280150C /* [CP] Embed Pods Frameworks */ = {
@@ -353,8 +360,10 @@
 			files = (
 				4E50CAEA1F6EDFB10073D485 /* ViewController.swift in Sources */,
 				4ECD32C41F6EE9DF007A6705 /* WaypointGraphic.swift in Sources */,
+				1C04F5EF1F706ACC00B067E7 /* AnnotationView.swift in Sources */,
 				4E50CAE81F6EDFB10073D485 /* AppDelegate.swift in Sources */,
 				4ECD32C21F6EE8C3007A6705 /* Waypoint.swift in Sources */,
+				1C04F5F11F70700700B067E7 /* WaypointViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +518,9 @@
 			baseConfigurationReference = 8A4D7D9C7A65D4F5051D816F /* Pods-ios-ar-poc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 93P2X7NCZC;
 				INFOPLIST_FILE = "ios-ar-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "onxmaps.ios-ar-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +533,9 @@
 			baseConfigurationReference = 8B22BD4C0178256C20F8DA10 /* Pods-ios-ar-poc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 93P2X7NCZC;
 				INFOPLIST_FILE = "ios-ar-poc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "onxmaps.ios-ar-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";

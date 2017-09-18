@@ -1,5 +1,6 @@
 import UIKit
 import ArcGIS
+import HDAugmentedReality
 
 class ViewController: UIViewController {
 
@@ -8,7 +9,7 @@ class ViewController: UIViewController {
     fileprivate let locationManager = CLLocationManager()
     
     let waypoints = [
-        Waypoint(latitude: 45.6770, longitude: -111.0429, elevation: 5000)]
+        Waypoint(name: "Bozeman", latitude: 45.6770, longitude: -111.0429, elevation: 5000)]
     
     var markupsGraphicsOverlay = AGSGraphicsOverlay()
     
@@ -36,13 +37,7 @@ class ViewController: UIViewController {
         }
 
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
 }
 
 extension ViewController: CLLocationManagerDelegate {
